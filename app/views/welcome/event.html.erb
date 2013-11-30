@@ -1,0 +1,24 @@
+<script>
+  var object = {};
+  _.extend(object, Backbone.Events);
+  
+  object.on('hello', function(who) {
+    $('#people').append('<li>こんにちは、' + who + 'さん！</li>');
+  });
+  
+  function hello() {
+    var name = $('#name').val();
+    object.trigger('hello', name);
+  }
+</script>
+
+<div>
+  <form>
+    <label for="name">名前</label>
+    <input id="name" type="text" />
+    <%= link_to_function 'デモ', 'hello();' %>
+  </form>
+</div>
+
+<ul id="people">
+</ul>
