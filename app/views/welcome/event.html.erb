@@ -5,4 +5,9 @@
   object.on('hello', function(who) {
     $('#people').append('<li>こんにちは、' + who + 'さん！</li>');
   });
+  
+  function hello() {
+    var name = $('#name').val();
+    object.trigger('hello', name);
+  }
 </script>
