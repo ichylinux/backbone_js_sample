@@ -1,4 +1,8 @@
 <script>
   var object = {};
   _.extend(object, Backbone.Events);
+  
+  object.on('hello', function(who) {
+    $('#people').append('<li>こんにちは、' + who + 'さん！</li>');
+  });
 </script>
