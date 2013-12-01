@@ -33,7 +33,7 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', :platforms => :ruby
 
 # Deploy with Capistrano
 # gem 'capistrano'
