@@ -180,7 +180,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.1)
+    uglifier (2.3.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicorn (4.7.0)
@@ -188,7 +188,7 @@ GEM
       rack
       raindrops (~> 0.7)
     websocket (1.0.7)
-    websocket-driver (0.3.0)
+    websocket-driver (0.3.1)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
